@@ -44,4 +44,7 @@ public class Persona {
 
 	@OneToMany(mappedBy = "persona", fetch = FetchType.LAZY)
 	private List<Docente> docentes;
+	
+	@OneToMany(mappedBy = "persona", fetch = FetchType.LAZY)
+	private List<Perfil> perfiles;
 }

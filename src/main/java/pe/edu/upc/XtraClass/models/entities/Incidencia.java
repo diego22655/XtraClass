@@ -7,6 +7,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -29,9 +31,12 @@ public class Incidencia {
 	@Temporal(TemporalType.DATE)
 	private Date fecha;
 	
-	
+	@ManyToOne
+	@JoinColumn(name="Alumno_id")
 	private Alumno alumno;
 	
+	@ManyToOne
+	@JoinColumn(name="Asunto_id")
 	private Asunto asunto;
 
 }
