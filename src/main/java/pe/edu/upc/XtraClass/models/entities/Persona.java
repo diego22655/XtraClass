@@ -34,7 +34,7 @@ public class Persona {
 	
 	@Column(name = "contraseña", length = 12, nullable = false)
 	private String contraseña;
-	
+	 
 	@Column(name = "nacimiento", nullable = false)
 	@Temporal(TemporalType.DATE)
 	private Date nacimiento;

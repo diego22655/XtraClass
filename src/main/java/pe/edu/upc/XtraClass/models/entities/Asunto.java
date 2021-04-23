@@ -21,7 +21,7 @@ public class Asunto {
 	@Column(name = "nomAsunto",length = 15, nullable = false)
 	private String nomAsunto;
 	
-	@Column(name = "descripcion",length = 120, nullable = false)
+	@Column(name = "descripcion",length = 120)
 	private String descripcion;
 	
 	@OneToMany(mappedBy = "asunto", fetch = FetchType.LAZY)
