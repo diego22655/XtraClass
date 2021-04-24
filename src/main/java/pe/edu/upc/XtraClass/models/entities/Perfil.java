@@ -28,4 +28,40 @@ public class Perfil {
 	@ManyToOne
 	@JoinColumn(name= "docente_id")
 	private MateriaProfesor docentes;
+	
+	// -- Getter, Setter
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public Persona getPersona() {
+		return persona;
+	}
+
+	public void setPersona(Persona persona) {
+		this.persona = persona;
+	}
+
+	public MateriaProfesor getMateriaProfesor() {
+		return materiaProfesor;
+	}
+
+	public void setMateriaProfesor(MateriaProfesor materiaProfesor) {
+		this.materiaProfesor = materiaProfesor;
+	}
+
+	public MateriaProfesor getDocentes() {
+		return docentes;
+	}
+
+	public void setDocentes(MateriaProfesor docentes) {
+		this.docentes = docentes;
+	}
+	
+	
 }

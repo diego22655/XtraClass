@@ -1,5 +1,6 @@
 package pe.edu.upc.XtraClass.models.entities;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.Column;
@@ -30,4 +31,51 @@ public class Tarjeta {
 	
 	@OneToMany(mappedBy="tarjeta",fetch= FetchType.LAZY)
 	private List<Alumno> alumnos;
+	
+	// -- Constructor, Getter, Setter
+	public Tarjeta() {
+		alumnos = new ArrayList<Alumno>();
+	}
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public String getNroTarjeta() {
+		return nroTarjeta;
+	}
+
+	public void setNroTarjeta(String nroTarjeta) {
+		this.nroTarjeta = nroTarjeta;
+	}
+
+	public String getPropietario() {
+		return propietario;
+	}
+
+	public void setPropietario(String propietario) {
+		this.propietario = propietario;
+	}
+
+	public Integer getCcv() {
+		return ccv;
+	}
+
+	public void setCcv(Integer ccv) {
+		this.ccv = ccv;
+	}
+
+	public List<Alumno> getAlumnos() {
+		return alumnos;
+	}
+
+	public void setAlumnos(List<Alumno> alumnos) {
+		this.alumnos = alumnos;
+	}
+	
+	
 }

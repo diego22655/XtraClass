@@ -1,5 +1,6 @@
 package pe.edu.upc.XtraClass.models.entities;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.Column;
@@ -26,4 +27,43 @@ public class Asunto {
 	
 	@OneToMany(mappedBy = "asunto", fetch = FetchType.LAZY)
 	private List<Incidencia> incidencias;
+	
+	// -- Constructor, Getter, Setter
+	public Asunto() {
+		incidencias = new ArrayList<Incidencia>();
+	}
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public String getNomAsunto() {
+		return nomAsunto;
+	}
+
+	public void setNomAsunto(String nomAsunto) {
+		this.nomAsunto = nomAsunto;
+	}
+
+	public String getDescripcion() {
+		return descripcion;
+	}
+
+	public void setDescripcion(String descripcion) {
+		this.descripcion = descripcion;
+	}
+
+	public List<Incidencia> getIncidencias() {
+		return incidencias;
+	}
+
+	public void setIncidencias(List<Incidencia> incidencias) {
+		this.incidencias = incidencias;
+	}
+	
+	
 }

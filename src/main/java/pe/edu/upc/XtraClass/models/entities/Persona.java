@@ -1,5 +1,6 @@
 package pe.edu.upc.XtraClass.models.entities;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -47,4 +48,85 @@ public class Persona {
 	
 	@OneToMany(mappedBy = "persona", fetch = FetchType.LAZY)
 	private List<Perfil> perfiles;
+	
+	// -- Constructor, Getter, Setter
+	public Persona() {
+		alumnos = new ArrayList<Alumno>();
+		docentes = new ArrayList<Docente>();
+		perfiles = new ArrayList<Perfil>();
+	}
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public String getApellido() {
+		return apellido;
+	}
+
+	public void setApellido(String apellido) {
+		this.apellido = apellido;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getContraseña() {
+		return contraseña;
+	}
+
+	public void setContraseña(String contraseña) {
+		this.contraseña = contraseña;
+	}
+
+	public Date getNacimiento() {
+		return nacimiento;
+	}
+
+	public void setNacimiento(Date nacimiento) {
+		this.nacimiento = nacimiento;
+	}
+
+	public List<Alumno> getAlumnos() {
+		return alumnos;
+	}
+
+	public void setAlumnos(List<Alumno> alumnos) {
+		this.alumnos = alumnos;
+	}
+
+	public List<Docente> getDocentes() {
+		return docentes;
+	}
+
+	public void setDocentes(List<Docente> docentes) {
+		this.docentes = docentes;
+	}
+
+	public List<Perfil> getPerfiles() {
+		return perfiles;
+	}
+
+	public void setPerfiles(List<Perfil> perfiles) {
+		this.perfiles = perfiles;
+	}
+	
+	
 }

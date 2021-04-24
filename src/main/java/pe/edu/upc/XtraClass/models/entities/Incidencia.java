@@ -39,4 +39,54 @@ public class Incidencia {
 	@JoinColumn(name="Asunto_id")
 	private Asunto asunto;
 
+	
+	// -- Getter, Setter
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public String getDescripcion() {
+		return descripcion;
+	}
+
+	public void setDescripcion(String descripcion) {
+		this.descripcion = descripcion;
+	}
+
+	public String getProblema() {
+		return problema;
+	}
+
+	public void setProblema(String problema) {
+		this.problema = problema;
+	}
+
+	public Date getFecha() {
+		return fecha;
+	}
+
+	public void setFecha(Date fecha) {
+		this.fecha = fecha;
+	}
+
+	public Alumno getAlumno() {
+		return alumno;
+	}
+
+	public void setAlumno(Alumno alumno) {
+		this.alumno = alumno;
+	}
+
+	public Asunto getAsunto() {
+		return asunto;
+	}
+
+	public void setAsunto(Asunto asunto) {
+		this.asunto = asunto;
+	}
+	
 }

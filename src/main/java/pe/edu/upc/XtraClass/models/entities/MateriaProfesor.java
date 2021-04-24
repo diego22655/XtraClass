@@ -1,5 +1,6 @@
 package pe.edu.upc.XtraClass.models.entities;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.Column;
@@ -32,6 +33,53 @@ public class MateriaProfesor {
 	private Materia materia;
 	
 	@ManyToOne
-	@JoinColumn(name = "Docente_ID")
+	@JoinColumn(name = "Docente_ID", insertable = false, updatable = false)
 	private Docente docente;
+	
+	//-- Constructor, Getter, Setter
+	public MateriaProfesor() {
+		perfil = new ArrayList<Perfil>();
+	}
+
+	public Integer getDocenteID() {
+		return DocenteID;
+	}
+
+	public void setDocenteID(Integer docenteID) {
+		DocenteID = docenteID;
+	}
+
+	public Integer getMateriaID() {
+		return materiaID;
+	}
+
+	public void setMateriaID(Integer materiaID) {
+		this.materiaID = materiaID;
+	}
+
+	public List<Perfil> getPerfil() {
+		return perfil;
+	}
+
+	public void setPerfil(List<Perfil> perfil) {
+		this.perfil = perfil;
+	}
+
+	public Materia getMateria() {
+		return materia;
+	}
+
+	public void setMateria(Materia materia) {
+		this.materia = materia;
+	}
+
+	public Docente getDocente() {
+		return docente;
+	}
+
+	public void setDocente(Docente docente) {
+		this.docente = docente;
+	}
+	
+	
 }

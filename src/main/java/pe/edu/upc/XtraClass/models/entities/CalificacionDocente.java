@@ -1,5 +1,6 @@
 package pe.edu.upc.XtraClass.models.entities;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.Column;
@@ -24,4 +25,35 @@ public class CalificacionDocente {
 	
 	@OneToMany(mappedBy = "calificacion", fetch = FetchType.LAZY)
 	private List<ReservaClase> reservacion;
+	
+	// -- Constructor, Getter, Setter
+	public CalificacionDocente() {
+		reservacion = new ArrayList<ReservaClase>();
+	}
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public String getNombreCalificacion() {
+		return nombreCalificacion;
+	}
+
+	public void setNombreCalificacion(String nombreCalificacion) {
+		this.nombreCalificacion = nombreCalificacion;
+	}
+
+	public List<ReservaClase> getReservacion() {
+		return reservacion;
+	}
+
+	public void setReservacion(List<ReservaClase> reservacion) {
+		this.reservacion = reservacion;
+	}
+	
+	
 }

@@ -51,4 +51,7 @@ public class ReservaClase {
 	@ManyToOne
 	@JoinColumn(name= "Docente_ID")
 	private Docente docente;
+	
+	// -- Constructor, Getter, Setter
+	
 }

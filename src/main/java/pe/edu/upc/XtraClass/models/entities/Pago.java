@@ -28,5 +28,33 @@ public class Pago {
 	@ManyToOne
 	@JoinColumn(name = "reservacion_id")
 	private ReservaClase reservacion;
+	
+	// -- Getter, Setter
 
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public Date getFechaPago() {
+		return fechaPago;
+	}
+
+	public void setFechaPago(Date fechaPago) {
+		this.fechaPago = fechaPago;
+	}
+
+	public ReservaClase getReservacion() {
+		return reservacion;
+	}
+
+	public void setReservacion(ReservaClase reservacion) {
+		this.reservacion = reservacion;
+	}
+
+	
+	
 }
