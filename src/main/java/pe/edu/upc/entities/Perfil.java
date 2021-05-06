@@ -1,4 +1,4 @@
-package pe.edu.upc.XtraClass.models.entities;
+package pe.edu.upc.entities;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

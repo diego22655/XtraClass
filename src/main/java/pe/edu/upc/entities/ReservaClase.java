@@ -1,4 +1,4 @@
-package pe.edu.upc.XtraClass.models.entities;
+package pe.edu.upc.entities;
 
 import java.util.Date;
 import java.util.List;

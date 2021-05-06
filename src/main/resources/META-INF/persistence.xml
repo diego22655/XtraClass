@@ -6,19 +6,19 @@
 	
 	<persistence-unit name="XtraClassPU" transaction-type="JTA">
 		<jta-data-source>java:/XtraClassDS</jta-data-source>
-		<class>pe.edu.upc.XtraClass.models.entities.Alumno</class>
-		<class>pe.edu.upc.XtraClass.models.entities.Asunto</class>
-		<class>pe.edu.upc.XtraClass.models.entities.CalificacionDocente</class>
-		<class>pe.edu.upc.XtraClass.models.entities.Docente</class>
-		<class>pe.edu.upc.XtraClass.models.entities.Foro</class>
-		<class>pe.edu.upc.XtraClass.models.entities.Incidencia</class>
-		<class>pe.edu.upc.XtraClass.models.entities.Materia</class>
-		<class>pe.edu.upc.XtraClass.models.entities.MateriaProfesor</class>
-		<class>pe.edu.upc.XtraClass.models.entities.Pago</class>
-		<class>pe.edu.upc.XtraClass.models.entities.Perfil</class>
-		<class>pe.edu.upc.XtraClass.models.entities.Persona</class>
-		<class>pe.edu.upc.XtraClass.models.entities.ReservaClase</class>
-		<class>pe.edu.upc.XtraClass.models.entities.Tarjeta</class>
+		<class>pe.edu.upc.entities.Alumno</class>
+		<class>pe.edu.upc.entities.Asunto</class>
+		<class>pe.edu.upc.entities.CalificacionDocente</class>
+		<class>pe.edu.upc.entities.Docente</class>
+		<class>pe.edu.upc.entities.Foro</class>
+		<class>pe.edu.upc.entities.Incidencia</class>
+		<class>pe.edu.upc.entities.Materia</class>
+		<class>pe.edu.upc.entities.MateriaProfesor</class>
+		<class>pe.edu.upc.entities.Pago</class>
+		<class>pe.edu.upc.entities.Perfil</class>
+		<class>pe.edu.upc.entities.Persona</class>
+		<class>pe.edu.upc.entities.ReservaClase</class>
+		<class>pe.edu.upc.entities.Tarjeta</class>
 		<exclude-unlisted-classes>false</exclude-unlisted-classes>
 		<properties>
 			<property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
